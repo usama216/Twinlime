@@ -5,6 +5,7 @@ import OurMission from "./OurMission";
 import WhyWorkWithUs from "./WhyWorkWithUs";
 import Categories from "./Categories";
 import PopularProducts from "./PopularProducts";
+import Timeline from "../AboutsUs/Timeline";
 
 const LandingPage = () => {
     useEffect(()=>(
@@ -15,6 +16,7 @@ const LandingPage = () => {
       <HeroSection />
       <OurMission />
       <WhyWorkWithUs />
+    <Timeline/>
       <Categories />
       <PopularProducts />
     </>
