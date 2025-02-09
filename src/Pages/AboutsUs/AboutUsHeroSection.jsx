@@ -17,7 +17,7 @@ const AboutUsHeroSection = () => {
 
       {/* Content */}
       <div className="video-content space-y-2 z-10">
-    <img src="/twinlime-logo.png" className="w-full"/>
+    <img src="/twinlime-logo-white.png" className="w-full"/>
       </div>
 
       {/* Dark Overlay */}

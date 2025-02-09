@@ -8,7 +8,7 @@ const WhyWorkWithUs = () => {
   }, []);
   return (
     <>
-      <div className="flex justify-center items-center min-h-[50vh]">
+      <div className="flex justify-center items-center min-h-[50vh] py-10">
         <div>
           <h1 className="text-4xl font-bold text-center "
              data-aos="fade-up"

@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+          'grow': 'grow 2s ease-out forwards',
+      },
+      keyframes: {
+          grow: {
+              '0%': { height: '0%' },
+              '100%': { height: '100%' },
+          },
+      },
+  },
   },
   plugins: [],
 }
