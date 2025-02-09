@@ -147,7 +147,6 @@ import Checkbox from '../atoms/Checkbox';
 import Button from '../atoms/Button';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import Dropdown from '../../components/atoms/Dropdown';
 
 const SignupForm = () => {
   const formik = useFormik({
@@ -228,21 +227,7 @@ const SignupForm = () => {
         <div className="text-red-500">{formik.errors.gender}</div>
       )}
 
-      <Dropdown
-        id="country"
-        name="country"
-        options={[
-          { label: 'United States', value: 'us' },
-          { label: 'Canada', value: 'ca' },
-          { label: 'India', value: 'in' },
-        ]}
-        value={formik.values.country}
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-      />
-      {formik.touched.country && formik.errors.country && (
-        <div className="text-red-500">{formik.errors.country}</div>
-      )}
+   
 
       <Checkbox
         id="terms"
