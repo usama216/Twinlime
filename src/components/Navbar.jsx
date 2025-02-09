@@ -26,7 +26,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-black p-4 fixed top-0 left-0 w-full z-50">
+    <nav className="bg-black p-4 fixed border-b top-0 left-0 w-full z-50">
       <div className="flex items-center justify-between max-w-7xl mx-auto px-10">
         {/* Left Menu - Items move away from the logo */}
         <div className="hidden md:flex flex-1 justify-start space-x-10">
