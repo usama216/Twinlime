@@ -143,11 +143,11 @@ import Heading from '../atoms/Heading';
 import InputField from '../atoms/InputField';
 import RadioButton from '../atoms/RadioButton';
 import TextArea from '../atoms/TextArea';
-// import Dropdown from '../atoms/DropDown';
 import Checkbox from '../atoms/Checkbox';
 import Button from '../atoms/Button';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import Dropdown from '../atoms/DropDown';
 
 const SignupForm = () => {
   const formik = useFormik({
@@ -228,7 +228,7 @@ const SignupForm = () => {
         <div className="text-red-500">{formik.errors.gender}</div>
       )}
 
-      {/* <Dropdown
+      <Dropdown
         id="country"
         name="country"
         options={[
@@ -242,7 +242,7 @@ const SignupForm = () => {
       />
       {formik.touched.country && formik.errors.country && (
         <div className="text-red-500">{formik.errors.country}</div>
-      )} */}
+      )}
 
       <Checkbox
         id="terms"
