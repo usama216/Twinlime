@@ -1,6 +1,19 @@
 import { FaCheckCircle } from "react-icons/fa";
+import { IoMdCheckmark } from "react-icons/io";
 
 const Aboutus = () => {
+  const colors = ["bg-green-800", "bg-yellow-400", "bg-red-500", "bg-green-500", "bg-purple-500"];
+ 
+
+const gradients = [
+  "bg-gradient-to-r from-teal-700 via-green-500 to-red-700",
+  "bg-gradient-to-r from-green-500 via-yellow-500 to-red-700",
+  "bg-gradient-to-r from-yellow-500 via-red-500 to-red-700",
+  "bg-gradient-to-r from-red-500 via-yellow-500 to-green-500",
+  "bg-gradient-to-r from-red-700 via-green-500 to-teal-700",
+];
+ 
+ 
   return (
     <>
 
@@ -51,7 +64,11 @@ const Aboutus = () => {
             "Affordable prices",
           ].map((item, index) => (
             <li key={index} className="flex items-center space-x-3 text-2xl text-[#614533] ">
-              <FaCheckCircle className="text-[#614533] text-3xl" />
+           <span className={`p-1 rounded-full flex items-center justify-center ${colors[index % colors.length]}`}>
+            <IoMdCheckmark className="text-white text-2xl bg-transparent" />
+          </span>
+              {/* <FaCheckCircle className="text-red-500 text-3xl" /> */}
+             
               <span>{item}</span>
             </li>
           ))}
