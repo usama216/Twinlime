@@ -7,7 +7,7 @@ import {
   FaChartBar,
   FaGlobe,
 } from "react-icons/fa";
-
+ 
 const timelineData = [
   {
     year: "2012",
