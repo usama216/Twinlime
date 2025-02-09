@@ -147,7 +147,7 @@ import Checkbox from '../atoms/Checkbox';
 import Button from '../atoms/Button';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import Dropdown from '../atoms/DropDown';
+import Dropdown from '../../components/atoms/Dropdown';
 
 const SignupForm = () => {
   const formik = useFormik({
