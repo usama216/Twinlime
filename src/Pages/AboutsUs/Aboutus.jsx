@@ -4,16 +4,6 @@ import { IoMdCheckmark } from "react-icons/io";
 const Aboutus = () => {
   const colors = ["bg-green-800", "bg-yellow-400", "bg-red-500", "bg-green-500", "bg-purple-500"];
  
-
-const gradients = [
-  "bg-gradient-to-r from-teal-700 via-green-500 to-red-700",
-  "bg-gradient-to-r from-green-500 via-yellow-500 to-red-700",
-  "bg-gradient-to-r from-yellow-500 via-red-500 to-red-700",
-  "bg-gradient-to-r from-red-500 via-yellow-500 to-green-500",
-  "bg-gradient-to-r from-red-700 via-green-500 to-teal-700",
-];
- 
- 
   return (
     <>
 
