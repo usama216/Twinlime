@@ -182,7 +182,7 @@ const Timeline = () => {
       <div className="block lg:hidden">
         <>
           <h2 className="text-3xl md:text-6xl font-extrabold mt-14 text-center text-[#614533] underline">
-            Our Experience & Achievement
+            Experience & Achievements
           </h2>
 
           <div className="flex justify-center items-start min-h-[60vh] px-6">
