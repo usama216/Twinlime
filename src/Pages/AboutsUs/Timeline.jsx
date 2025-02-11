@@ -181,7 +181,7 @@ const Timeline = () => {
 
       <div className="block lg:hidden">
         <>
-          <h2 className="text-3xl md:text-6xl font-extrabold mt-14 text-center text-[#614533] underline">
+          <h2 className="text-3xl md:text-6xl font-extrabold mt-14 text-center text-[#614533]">
             Experience & Achievements
           </h2>
 
