@@ -17,9 +17,15 @@ const Categories = () => {
   }, []);
   return (
     <>
-      <h1 className="text-4xl font-bold text-center underline" data-aos="fade-up">
+      {/* <h1 className="text-4xl font-bold text-center underline" data-aos="fade-up">
         Categories
-      </h1>
+      </h1> */}
+      <h2 className="text-3xl md:text-6xl font-extrabold mt-14 text-center text-[#614533]"
+             data-aos="fade-up"
+
+>
+            Categories
+          </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full px-[10%] py-10">
         {/* Map through the cardData array to render the cards */}
         {cardData.map((card, index) => (
