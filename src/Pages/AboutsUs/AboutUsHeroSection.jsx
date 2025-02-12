@@ -18,7 +18,7 @@ const AboutUsHeroSection = () => {
       {/* Content */}
       <div className="video-content space-y-2 z-10">
     {/* <img src="/twinlime-logo-white.png" className="w-full"/> */}
-    <img src="/logo/45.png" className="w-full md:w-[50rem] h-auto" />
+    <img src="/logo/20.png" className="w-full md:w-[70rem] h-auto" />
 
       </div>
 
