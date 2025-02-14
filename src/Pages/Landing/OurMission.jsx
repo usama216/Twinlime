@@ -10,10 +10,11 @@ const OurMission = () => {
   return (
     <div className="relative w-full">
       {/* Static Background Image with Scrolling Text */}
+
       <section
-        className="relative h-[80vh] flex flex-col md:flex-row items-center justify-center text-white bg-black/50 bg-fixed overflow-auto"
+        className="relative h-[100vh] flex flex-col md:flex-row items-center justify-center text-white bg-black/50 bg-fixed overflow-auto"
         style={{
-          backgroundImage: "url('/All/wine.png')",
+          backgroundImage: "url('/public/mission.JPG')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -32,9 +33,9 @@ const OurMission = () => {
       </section>
 
       <section
-        className="relative h-[80vh] flex flex-col md:flex-row items-center justify-center text-white bg-black/50 bg-fixed overflow-auto"
+        className="relative h-[100vh] flex flex-col md:flex-row items-center justify-center text-white bg-black/50 bg-fixed overflow-auto"
         style={{
-          backgroundImage: "url('/All/Dairy.jpg')",
+          backgroundImage: "url('/public/Objective.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
