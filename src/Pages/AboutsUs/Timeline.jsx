@@ -142,9 +142,8 @@ const Timeline = () => {
                         } space-y-0`}
                       >
                         {/* Title & Description */}
-                        <div className=" w-72">
-                          {/* <h3 className="text-md font-semibold">{event.title}</h3> */}
-                          <p className="text-md text-gray-600">
+                        <div className="w-72 md:w-[10rem] xl:w-72">
+                          <p className="text-xs md:text-sm lg:text-md text-gray-600">
                             {event.description}
                           </p>
                         </div>

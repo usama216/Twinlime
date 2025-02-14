@@ -26,7 +26,7 @@ const Categories = () => {
 >
             Categories
           </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full px-[10%] py-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-3 px-[10%] py-10">
         {/* Map through the cardData array to render the cards */}
         {cardData.map((card, index) => (
           <article
