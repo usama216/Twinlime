@@ -35,7 +35,7 @@ const OurMission = () => {
       <section
         className="relative h-[100vh] flex flex-col md:flex-row items-center justify-center text-white bg-black/50 bg-fixed overflow-auto"
         style={{
-          backgroundImage: "url('/All/Objective.jpg')",
+          backgroundImage: "url('/All/objective.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
