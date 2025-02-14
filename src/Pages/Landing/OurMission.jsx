@@ -22,7 +22,7 @@ const OurMission = () => {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative flex flex-col md:flex-row justify-center items-center gap-10 z-10 max-w-7xl px-6 md:px-10 text-center md:text-left py-20">
           <h2 className="text-3xl md:text-5xl font-bold" data-aos="fade-up">
-            Mission
+            Missions
           </h2>
           <p className="mt-4 text-lg md:text-xl" data-aos="fade-up" data-aos-delay="200">
             Our mission is to provide top-notch services that help businesses grow and succeed. 
