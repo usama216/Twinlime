@@ -14,7 +14,7 @@ const OurMission = () => {
       <section
         className="relative h-[100vh] flex flex-col md:flex-row items-center justify-center text-white bg-black/50 bg-fixed overflow-auto"
         style={{
-          backgroundImage: "url('/public/mission.JPG')",
+          backgroundImage: "url('/mission/mission.JPG')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -35,7 +35,7 @@ const OurMission = () => {
       <section
         className="relative h-[100vh] flex flex-col md:flex-row items-center justify-center text-white bg-black/50 bg-fixed overflow-auto"
         style={{
-          backgroundImage: "url('/public/Objective.jpg')",
+          backgroundImage: "url('/mission/Objective.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
