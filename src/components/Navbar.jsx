@@ -25,7 +25,7 @@ const navigate = useNavigate()
 
   return (
     <>
-    <nav className="bg-black p-4 fixed border-b top-0 left-0 w-full z-50 hidden md:block">
+    <nav className="bg-transparent p-4 fixed border-b top-0 left-0 w-full z-50 hidden md:block">
       <div className="flex items-center justify-between max-w-5xl mx-auto px-10">
         {/* Left Menu - Items next to the logo */}
         <div className="flex items-center space-x-10">
