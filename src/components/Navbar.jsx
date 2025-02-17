@@ -1,31 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa"; // Importing hamburger menu and close icons
 
 const Navbar = () => {
   const [hovered, setHovered] = useState(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State for managing the menu drawer
-const navigate = useNavigate()
+  const [isScrolled, setIsScrolled] = useState(false); // State for tracking scroll
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const menuItems = [
     { path: "/about-us", label: "About", subMenu: [] },
-    {
-      path: "#",
-      label: "News",
-      subMenu: [""],
-    },
-    {
-      path: "#",
-      label: "Products",
-      subMenu: [""],
-    },
+    { path: "#", label: "News", subMenu: [""] },
+    { path: "#", label: "Products", subMenu: [""] },
     { path: "#", label: "Partners", subMenu: [""] },
     { path: "/contact", label: "Contact", subMenu: [] },
     { path: "#S", label: "Packaging Industry", subMenu: [""] },
   ];
 
   return (
-    <>
-    <nav className="bg-transparent relative p-4 border-b top-0 left-0 w-full z-50 hidden md:block">
+<>
+<nav
+      className={`fixed top-0 left-0 w-full z-50 p-4 border-b transition-all duration-300 ${
+        isScrolled ? "bg-black/50 shadow-lg" : "bg-transparent"
+      }`}
+    >
       <div className="flex items-center justify-between max-w-5xl mx-auto px-10">
         {/* Left Menu - Items next to the logo */}
         <div className="flex items-center space-x-10">
