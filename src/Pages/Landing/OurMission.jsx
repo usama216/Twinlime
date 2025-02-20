@@ -140,10 +140,10 @@ const OurMission = () => {
     }}
   >
     <div className="absolute inset-0 bg-black/60"></div>
-    <div className="relative z-10 flex flex-col items-center justify-center w-full max-h-[100vh] px-6 md:px-10 text-center">
+    <div className="relative z-10 flex flex-col items-center justify-center w-full min-h-[100vh] px-6 md:px-10 text-center">
       <div
         className={`transition-all duration-1000 ${
-          showMissionText ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          showMissionText ? "opacity-100 translate-y-0" : "opacity-100 translate-y-10"
         }`}
       >
         <h2 className="text-3xl md:text-5xl font-bold" data-aos="fade-up">
@@ -160,19 +160,19 @@ const OurMission = () => {
   <section
     ref={objectiveRef}
     className={`relative h-[220vh] flex flex-col items-center justify-center text-white bg-fixed transition-all duration-1000 ${
-      showObjectiveBG ? "opacity-100" : "opacity-0"
+      showObjectiveBG ? "opacity-100" : "opacity-1000"
     }`}
     style={{
-      backgroundImage: showObjectiveBG ? "url('/All/objective.jpg')" : "none",
+      backgroundImage: showObjectiveBG ? "url('/All/objective.jpg')" : "url('/All/objective.jpg')",
       backgroundSize: "cover",
       backgroundPosition: "center",
     }}
   >
     <div className="absolute inset-0 bg-black/60"></div>
-    <div className="relative z-10 flex flex-col items-center justify-center w-full max-h-[100vh] px-6 md:px-10 text-center">
+    <div className="relative z-10 flex flex-col items-center justify-center w-full min-h-[100vh] px-6 md:px-10 text-center">
       <div
         className={`transition-all duration-1000 ${
-          showObjectiveText ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          showObjectiveText ? "opacity-100 translate-y-0" : "opacity-100 translate-y-10"
         }`}
       >
         <h2 className="text-3xl md:text-5xl font-bold" data-aos="fade-up" data-aos-delay="600">
