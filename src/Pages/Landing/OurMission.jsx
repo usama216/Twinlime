@@ -132,7 +132,7 @@ const OurMission = () => {
   {/* Mission Section */}
   <section
     ref={missionRef}
-    className="relative h-[220vh] flex flex-col items-center justify-center text-white bg-black/50 bg-fixed"
+    className="relative h-[200vh] flex flex-col items-center justify-center text-white bg-black/50 bg-fixed"
     style={{
       backgroundImage: "url('/All/mission.jpg')",
       backgroundSize: "cover",
@@ -159,7 +159,7 @@ const OurMission = () => {
   {/* Objective Section */}
   <section
     ref={objectiveRef}
-    className={`relative h-[220vh] flex flex-col items-center justify-center text-white bg-fixed transition-all duration-1000 ${
+    className={`relative h-[170vh] flex flex-col items-center justify-center text-white bg-fixed transition-all duration-1000 ${
       showObjectiveBG ? "opacity-100" : "opacity-1000"
     }`}
     style={{

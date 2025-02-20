@@ -24,6 +24,7 @@
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.1.1",
     "react-toastify": "^11.0.2",
+    "typewriter-effect": "^2.21.0",
     "uuid": "^11.0.4",
     "viem": "^2.22.2",
     "wagmi": "^2.14.6",
