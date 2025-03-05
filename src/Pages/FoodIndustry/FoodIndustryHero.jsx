@@ -15,13 +15,7 @@ const FoodIndustryHero = () => {
         />
       </div>
 
-      {/* Content */}
-      {/* <div className="video-content space-y-2 z-10">
-    <img src="/logo/20.png" className="w-full md:w-[70rem] h-auto" />
 
-      </div> */}
-
-      {/* Dark Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-0"></div>
     </section>
   );

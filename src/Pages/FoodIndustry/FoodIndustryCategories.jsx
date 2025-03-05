@@ -62,7 +62,9 @@ const FoodIndustryCategories = () => {
         Categories
       </h2>
 
-      <div className="grid grid-cols-3 gap-3 px-[10%] py-10">
+      {/* <div className="grid grid-cols-3 gap-3 px-[10%] py-10"> */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 px-4 md:px-[10%] py-10">
+
   {cardData.map((card, index) => (
     <article
       key={card.id}
@@ -86,7 +88,7 @@ const FoodIndustryCategories = () => {
       {/* Title */}
       <h3
         className={`z-10 text-3xl font-bold transition-all duration-500 
-        ${index === 1 ? "absolute text-center text-5xl" : "ml-5 mt-3"}`}
+        ${index === 1 ? "md:absolute md:text-center md:text-5xl" : "ml-5 mt-3 text-center md:text-start"}`}
       >
         {card.title}
       </h3>
