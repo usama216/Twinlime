@@ -2,33 +2,47 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const cardData = [
-  { id: 1, title: "Dairy", videoUrl: "/FoodIndustry/dairy.mp4",
-    imageUrl: "/FoodIndustry/dairy.jpg", },
+  {
+    id: 1,
+    title: "Dairy",
+    videoUrl: "/FoodIndustry/dairy.mp4",
+    imageUrl: "/FoodIndustry/dairy.jpg",
+pageUrl: "/food-industry/dairy",
+
+  },
   {
     id: 2,
     title: "Beverage",
     videoUrl: "/FoodIndustry/beverage.mp4",
     imageUrl: "/FoodIndustry/beverage.jpg",
+pageUrl: "/food-industry/beverage",
+
   },
   {
     id: 3,
     title: "Meat and Fish",
     videoUrl: "/video.mp4",
     imageUrl: "/All/meat.jpg",
+pageUrl: "/food-industry/meatfish",
+
   },
   {
     id: 4,
     title: "Jam and Sauces",
     videoUrl: "/About/About-Video.mp4",
     imageUrl: "/All/Veg.jpg",
+pageUrl: "/food-industry/jamsouce",
+
   },
   {
     id: 5,
     title: "Bakery",
     // videoUrl: "/video.mp4",
     videoUrl: "/FoodIndustry/bakery.mp4",
+pageUrl: "/food-industry/bakery",
 
     imageUrl: "/All/cake.jpg",
   },
@@ -37,21 +51,29 @@ const cardData = [
     title: "Functional Additives",
     videoUrl: "/About/About-Video.mp4",
     imageUrl: "/All/functional.png",
+pageUrl: "/food-industry/functionaladditives",
+
   },
   {
     id: 7,
     title: "Confectionery",
     videoUrl: "/FoodIndustry/confictionary.mp4",
     imageUrl: "/FoodIndustry/confictionary.jpg",
+pageUrl: "/food-industry/confictionary",
+
   },
 ];
 
 const FoodIndustryCategories = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
-
+const navigate = useNavigate()
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
+
+  const handleNavigate = (category)=>{
+    navigate(`${category}`)
+  }
 
   return (
     <>
@@ -64,39 +86,45 @@ const FoodIndustryCategories = () => {
 
       {/* <div className="grid grid-cols-3 gap-3 px-[10%] py-10"> */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 px-4 md:px-[10%] py-10">
-
-  {cardData.map((card, index) => (
-    <article
-      key={card.id}
-      className={`relative border-2 isolate text-black hover:text-white flex flex-col justify-end overflow-hidden w-full px-2 pb-8 pt-40 mx-auto mt-5 cursor-pointer 
-      ${index === 1 ? "row-span-3 flex justify-center items-center" : "row-span-1"}
+        {cardData.map((card, index) => (
+          <article
+            key={card.id}
+            className={`relative border-2 isolate text-black hover:text-white flex flex-col justify-end overflow-hidden w-full px-2 pb-8 pt-40 mx-auto mt-5 cursor-pointer 
+      ${
+        index === 1
+          ? "row-span-3 flex justify-center items-center"
+          : "row-span-1"
+      }
       group`}
-      data-aos="fade-up"
-      data-aos-delay={index * 100}
-      onClick={() => setSelectedVideo(card.videoUrl)}
-    >
-      {/* Image with Full Down to Up Animation */}
-      <img
-        src={card.imageUrl}
-        alt={card.title}
-        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 transform translate-y-full group-hover:translate-y-0"
-      />
+            data-aos="fade-up"
+            data-aos-delay={index * 100}
+            onClick={() => handleNavigate(card.pageUrl)}
+          >
+            {/* Image with Full Down to Up Animation */}
+            <img
+              src={card.imageUrl}
+              alt={card.title}
+              className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 transform translate-y-full group-hover:translate-y-0"
+            />
 
-      {/* Black Overlay (Only appears on hover) */}
-      <div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-500 group-hover:opacity-50"></div>
+            {/* Black Overlay (Only appears on hover) */}
+            <div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-500 group-hover:opacity-50"></div>
 
-      {/* Title */}
-      <h3
-        className={`z-10 text-3xl font-bold transition-all duration-500 
-        ${index === 1 ? "md:absolute md:text-center md:text-5xl" : "ml-5 mt-3 text-center md:text-start"}`}
-      >
-        {card.title}
-      </h3>
-    </article>
-  ))}
-</div>
-
-
+            {/* Title */}
+            <h3
+              className={`z-10 text-3xl font-bold transition-all duration-500 
+        ${
+          index === 1
+            ? "md:absolute md:text-center md:text-5xl"
+            : "ml-5 mt-3 text-center md:text-start"
+        }`}
+            >
+              {card.title}
+            </h3>
+          </article>
+        ))}
+      </div>
+{/* 
       <AnimatePresence>
         {selectedVideo && (
           <motion.div
@@ -127,7 +155,7 @@ const FoodIndustryCategories = () => {
             </motion.div>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </>
   );
 };

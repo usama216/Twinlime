@@ -5,6 +5,7 @@ import LandingPage from "./Pages/Landing/LandingPage";
 import ImageUploadGrid from "./components/ImageUploadGrid";
 import AboutUsMain from "./Pages/AboutsUs/AboutUsMain";
 import FoodIndustryMain from "./Pages/FoodIndustry/FoodIndustryMain";
+import DairyDetails from "./Pages/FoodIndustry/SubPages/DairyDetails";
 
 export default function Router() {
   let element = useRoutes([
@@ -26,6 +27,13 @@ export default function Router() {
       element: <FoodIndustryMain/>,
     },
 
+
+    {
+      path: "/food-industry/:category",
+      element: <DairyDetails />,
+    },
+
+   
 
     
     {
