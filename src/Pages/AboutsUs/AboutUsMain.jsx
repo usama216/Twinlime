@@ -10,7 +10,7 @@ window.scrollTo(0,0)
   return (
 <>
 
-<AboutUsHeroSection/>
+{/* <AboutUsHeroSection/> */}
 <Aboutus/>
 <Timeline/>
 

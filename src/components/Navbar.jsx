@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
 import { motion, AnimatePresence } from "framer-motion";
@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const navigate = useNavigate();
   const [step, setStep] = useState(0);
-
+  const location = useLocation();
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -20,20 +20,23 @@ const Navbar = () => {
   }, []);
 
   const menuItems = [
-    { path: "/about-us", label: "About" },
+    { path: "/about-us", label: "About Us" },
     { path: "/food-industry", label: "Food Industry", hasCustomDropdown: true },
-    { path: "#", label: "Products" },
+    { path: "#", label: "News" },
     { path: "#", label: "Partners" },
-    { path: "/contact", label: "Contact" },
+    { path: "/contact", label: "Contact Us" },
     { path: "#", label: "Packaging Industry" },
   ];
 
   return (
     <>
-      {/* NAVBAR FOR LARGE SCREENS */}
       <nav
         className={`fixed top-0 left-0 w-full z-50 p-4 border-b transition-all duration-300 hidden lg:block ${
-          isScrolled ? "bg-black/50 shadow-lg" : "bg-transparent"
+          location.pathname === "/about-us" // Check if on about-us page
+            ? "bg-black" 
+            : isScrolled
+            ? "bg-black/50 shadow-lg"
+            : "bg-transparent"
         }`}
       >
         <div className="flex items-center justify-between max-w-5xl mx-auto px-10">

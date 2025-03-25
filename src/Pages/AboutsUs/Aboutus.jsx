@@ -14,7 +14,7 @@ const Aboutus = () => {
     <>
      
 
-      <div className="grid md:grid-cols-2 gap-10 items-center py-10 px-6 md:px-20 bg-white">
+      <div className="grid mt-12 md:grid-cols-2 gap-10 items-center py-10 px-6 md:px-20 bg-white">
         {/* Left Section - Image with Design */}
       
         <div className="text-gray-800">
