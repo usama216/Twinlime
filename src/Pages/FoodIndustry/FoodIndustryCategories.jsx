@@ -71,9 +71,9 @@ const navigate = useNavigate()
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-  const handleNavigate = (category)=>{
-    navigate(`${category}`)
-  }
+  // const handleNavigate = (category)=>{
+  //   navigate(`${category}`)
+  // }
 
   return (
     <>
@@ -98,7 +98,7 @@ const navigate = useNavigate()
       group`}
             data-aos="fade-up"
             data-aos-delay={index * 100}
-            onClick={() => handleNavigate(card.pageUrl)}
+            // onClick={() => handleNavigate(card.pageUrl)}
           >
             {/* Image with Full Down to Up Animation */}
             <img
