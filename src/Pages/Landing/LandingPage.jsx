@@ -17,7 +17,7 @@ const LandingPage = () => {
       <OurMission />
       <WhyWorkWithUs />
     <Timeline/>
-      <Categories />
+      {/* <Categories /> */}
       <PopularProducts />
     </>
   );
