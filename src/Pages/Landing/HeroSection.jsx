@@ -35,7 +35,7 @@ const HeroSection = () => {
   const images = [
     "/Hero/1.jpeg",
     "/Hero/2.jpeg",
-    "/Hero/3.jpeg",
+    "/Hero/dd.jpg",
     "/Hero/4.jpeg",
     "/Hero/5.jpeg",
     "/Hero/6.jpeg",
