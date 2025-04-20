@@ -18,7 +18,7 @@ const LandingPage = () => {
       <WhyWorkWithUs />
     <Timeline/>
       {/* <Categories /> */}
-      <PopularProducts />
+      {/* <PopularProducts /> */}
     </>
   );
 };
