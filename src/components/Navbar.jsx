@@ -21,7 +21,7 @@ const Navbar = () => {
 
   const menuItems = [
     { path: "/about-us", label: "About Us" },
-    { path: "/food-industry", label: "Food Industry", hasCustomDropdown: true },
+    { path: "/food-industry", label: "Food Industry", hasCustomDropdown: false },
     { path: "#", label: "News" },
     { path: "#", label: "Partners" },
     { path: "/contact", label: "Contact Us" },
@@ -32,8 +32,8 @@ const Navbar = () => {
     <>
       <nav
         className={`fixed top-0 left-0 w-full z-50 p-4 border-b transition-all duration-300 hidden lg:block ${
-          location.pathname === "/about-us" // Check if on about-us page
-            ? "bg-black" 
+          location.pathname === "/about-us" ||  location.pathname === "/food-industry" // Check if on about-us page
+            ? "bg-black/50 shadow-lg" 
             : isScrolled
             ? "bg-black/50 shadow-lg"
             : "bg-transparent"

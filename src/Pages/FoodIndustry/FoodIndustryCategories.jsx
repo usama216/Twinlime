@@ -71,14 +71,14 @@ const navigate = useNavigate()
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-  // const handleNavigate = (category)=>{
-  //   navigate(`${category}`)
-  // }
+  const handleNavigate = (category)=>{
+    navigate(`${category}`)
+  }
 
   return (
     <>
       <h2
-        className="text-3xl md:text-6xl font-extrabold mt-14 text-center text-[#614533]"
+        className="text-3xl md:text-6xl font-extrabold mt-20 text-center text-[#614533]"
         data-aos="fade-up"
       >
         Categories
@@ -98,7 +98,7 @@ const navigate = useNavigate()
       group`}
             data-aos="fade-up"
             data-aos-delay={index * 100}
-            // onClick={() => handleNavigate(card.pageUrl)}
+            onClick={() => handleNavigate(card.pageUrl)}
           >
             {/* Image with Full Down to Up Animation */}
             <img

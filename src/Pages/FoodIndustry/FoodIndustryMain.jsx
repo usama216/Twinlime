@@ -7,7 +7,7 @@ const FoodIndustryMain = () => {
   return (
 <>
 
-<FoodIndustryHero/>
+{/* <FoodIndustryHero/> */}
 <FoodIndustryCategories/>
 
 </>
