@@ -10,15 +10,15 @@ function AppContent() {
 
   // List of paths where Navbar and Footer should be hidden
   const hiddenPaths = [
-    "/food-industry/dairy",
-    "/food-industry/beverage",
-    "/food-industry/meatfish",
-    "/food-industry/jamsauce",
-    "/food-industry/functionaladditives",
-    "/food-industry/bakery",
-    "/food-industry/confictionary",
+    // "/food-industry/dairy",
+    // "/food-industry/beverage",
+    // "/food-industry/meatfish",
+    // "/food-industry/jamsauce",
+    // "/food-industry/functionaladditives",
+    // "/food-industry/bakery",
+    // "/food-industry/confictionary",
 
-
+'/usama'
 
   ];
 

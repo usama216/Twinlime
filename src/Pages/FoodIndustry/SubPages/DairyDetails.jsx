@@ -140,7 +140,7 @@ const DairyDetails = () => {
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-0"></div>
       </section> */}
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-10">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-10 mt-16">
   {data.images.map((img, index) => (
     <div key={index}>
       <img

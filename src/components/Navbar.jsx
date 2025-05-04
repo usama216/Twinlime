@@ -30,15 +30,17 @@ const Navbar = () => {
 
   return (
     <>
-      <nav
-        className={`fixed top-0 left-0 w-full z-50 p-4 border-b transition-all duration-300 hidden lg:block ${
-          location.pathname === "/about-us" ||  location.pathname === "/food-industry" // Check if on about-us page
-            ? "bg-black/50 shadow-lg" 
-            : isScrolled
-            ? "bg-black/50 shadow-lg"
-            : "bg-transparent"
-        }`}
-      >
+
+  <nav
+    className={`fixed top-0 left-0 w-full z-50 p-4 border-b transition-all duration-300 hidden lg:block ${
+      location.pathname === "/"
+        ? isScrolled
+          ? "bg-black/50 shadow-lg"
+          : "bg-transparent"
+        : "bg-black/50 shadow-lg"
+    }`}
+  >
+
         <div className="flex items-center justify-between max-w-5xl mx-auto px-10">
           {/* Left Menu */}
           <div className="flex items-center space-x-10">
