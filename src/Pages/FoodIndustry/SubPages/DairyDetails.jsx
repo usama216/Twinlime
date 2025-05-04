@@ -8,14 +8,14 @@ const categoryData = {
   dairy: {
     videoUrl: "/FoodIndustry/dairy.mp4",
     images: [
-      "subcategories/cheese.JPEG",
-      "subcategories/cheese_icon.JPEG",
-      "subcategories/foodenhancer.JPEG",
-      "subcategories/milkshakeicon.JPEG",
-      "subcategories/weightloss.JPEG",
-      "subcategories/yoghurt.JPEG",
-      "subcategories/yogurticon.JPEG",
-      "subcategories/cheese.JPEG",
+      "/FoodIndustry/new/cheese.jpeg",
+      "/FoodIndustry/new/cheese_icon.jpeg",
+      "/FoodIndustry/new/foodenhancer.jpeg",
+      "/FoodIndustry/new/milkshakeicon.jpeg",
+      "/FoodIndustry/new/weightloss.jpeg",
+      "/FoodIndustry/new/yoghurt.jpeg",
+      "/FoodIndustry/new/yogurticon.jpeg",
+      "/FoodIndustry/new/cheese.jpeg",
     
 
     ],
@@ -24,14 +24,14 @@ const categoryData = {
   beverage: {
     videoUrl: "/FoodIndustry/dairy.mp4",
     images: [
-      "subcategories/cheese.JPEG",
-      "subcategories/cheese_icon.JPEG",
-      "subcategories/foodenhancer.JPEG",
-      "subcategories/milkshakeicon.JPEG",
-      "subcategories/weightloss.JPEG",
-      "subcategories/yoghurt.JPEG",
-      "subcategories/yogurticon.JPEG",
-      "subcategories/cheese.JPEG",
+      "/FoodIndustry/new/cheese.jpeg",
+      "/FoodIndustry/new/cheese_icon.jpeg",
+      "/FoodIndustry/new/foodenhancer.jpeg",
+      "/FoodIndustry/new/milkshakeicon.jpeg",
+      "/FoodIndustry/new/weightloss.jpeg",
+      "/FoodIndustry/new/yoghurt.jpeg",
+      "/FoodIndustry/new/yogurticon.jpeg",
+      "/FoodIndustry/new/cheese.jpeg",
     
 
     ],
@@ -39,14 +39,14 @@ const categoryData = {
   meatfish: {
     videoUrl: "/FoodIndustry/dairy.mp4",
     images: [
-      "subcategories/cheese.JPEG",
-      "subcategories/cheese_icon.JPEG",
-      "subcategories/foodenhancer.JPEG",
-      "subcategories/milkshakeicon.JPEG",
-      "subcategories/weightloss.JPEG",
-      "subcategories/yoghurt.JPEG",
-      "subcategories/yogurticon.JPEG",
-      "subcategories/cheese.JPEG",
+      "/FoodIndustry/new/cheese.jpeg",
+      "/FoodIndustry/new/cheese_icon.jpeg",
+      "/FoodIndustry/new/foodenhancer.jpeg",
+      "/FoodIndustry/new/milkshakeicon.jpeg",
+      "/FoodIndustry/new/weightloss.jpeg",
+      "/FoodIndustry/new/yoghurt.jpeg",
+      "/FoodIndustry/new/yogurticon.jpeg",
+      "/FoodIndustry/new/cheese.jpeg",
     
 
     ],
@@ -54,14 +54,14 @@ const categoryData = {
   jamsouce: {
     videoUrl: "/FoodIndustry/dairy.mp4",
     images: [
-      // "subcategories/cheese.JPEG",
-      "subcategories/cheese_icon.JPEG",
-      "subcategories/foodenhancer.JPEG",
-      "subcategories/milkshakeicon.JPEG",
-      "subcategories/weightloss.JPEG",
-      "subcategories/yoghurt.JPEG",
-      "subcategories/yogurticon.JPEG",
-      "subcategories/cheese.JPEG",
+      // "/FoodIndustry/new/cheese.jpeg",
+      "/FoodIndustry/new/cheese_icon.jpeg",
+      "/FoodIndustry/new/foodenhancer.jpeg",
+      "/FoodIndustry/new/milkshakeicon.jpeg",
+      "/FoodIndustry/new/weightloss.jpeg",
+      "/FoodIndustry/new/yoghurt.jpeg",
+      "/FoodIndustry/new/yogurticon.jpeg",
+      "/FoodIndustry/new/cheese.jpeg",
     
 
     ],
@@ -69,14 +69,14 @@ const categoryData = {
   bakery: {
     videoUrl: "/FoodIndustry/dairy.mp4",
     images: [
-      "subcategories/cheese.JPEG",
-      "subcategories/cheese_icon.JPEG",
-      "subcategories/foodenhancer.JPEG",
-      "subcategories/milkshakeicon.JPEG",
-      "subcategories/weightloss.JPEG",
-      "subcategories/yoghurt.JPEG",
-      "subcategories/yogurticon.JPEG",
-      "subcategories/cheese.JPEG",
+      "/FoodIndustry/new/cheese.jpeg",
+      "/FoodIndustry/new/cheese_icon.jpeg",
+      "/FoodIndustry/new/foodenhancer.jpeg",
+      "/FoodIndustry/new/milkshakeicon.jpeg",
+      "/FoodIndustry/new/weightloss.jpeg",
+      "/FoodIndustry/new/yoghurt.jpeg",
+      "/FoodIndustry/new/yogurticon.jpeg",
+      "/FoodIndustry/new/cheese.jpeg",
     
 
     ],
@@ -84,14 +84,14 @@ const categoryData = {
   functionaladditives: {
     videoUrl: "/FoodIndustry/dairy.mp4",
     images: [
-      "subcategories/cheese.JPEG",
-      "subcategories/cheese_icon.JPEG",
-      "subcategories/foodenhancer.JPEG",
-      "subcategories/milkshakeicon.JPEG",
-      "subcategories/weightloss.JPEG",
-      "subcategories/yoghurt.JPEG",
-      "subcategories/yogurticon.JPEG",
-      "subcategories/cheese.JPEG",
+      "/FoodIndustry/new/cheese.jpeg",
+      "/FoodIndustry/new/cheese_icon.jpeg",
+      "/FoodIndustry/new/foodenhancer.jpeg",
+      "/FoodIndustry/new/milkshakeicon.jpeg",
+      "/FoodIndustry/new/weightloss.jpeg",
+      "/FoodIndustry/new/yoghurt.jpeg",
+      "/FoodIndustry/new/yogurticon.jpeg",
+      "/FoodIndustry/new/cheese.jpeg",
     
 
     ],
@@ -99,14 +99,14 @@ const categoryData = {
   confictionary: {
     videoUrl: "/FoodIndustry/dairy.mp4",
     images: [
-      "subcategories/cheese.JPEG",
-      "subcategories/cheese_icon.JPEG",
-      "subcategories/foodenhancer.JPEG",
-      "subcategories/milkshakeicon.JPEG",
-      "subcategories/weightloss.JPEG",
-      "subcategories/yoghurt.JPEG",
-      "subcategories/yogurticon.JPEG",
-      "subcategories/cheese.JPEG",
+      "/FoodIndustry/new/cheese.jpeg",
+      "/FoodIndustry/new/cheese_icon.jpeg",
+      "/FoodIndustry/new/foodenhancer.jpeg",
+      "/FoodIndustry/new/milkshakeicon.jpeg",
+      "/FoodIndustry/new/weightloss.jpeg",
+      "/FoodIndustry/new/yoghurt.jpeg",
+      "/FoodIndustry/new/yogurticon.jpeg",
+      "/FoodIndustry/new/cheese.jpeg",
     
 
     ],
