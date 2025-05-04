@@ -126,8 +126,7 @@ const DairyDetails = () => {
 
   return (
     <>
-      <section className="h-[100vh] flex flex-col items-center justify-center text-center text-white px-[10%]">
-        {/* Background Video */}
+      {/* <section className="h-[100vh] flex flex-col items-center justify-center text-center text-white px-[10%]">
         <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
           <video
             className="min-w-full min-h-full absolute object-cover"
@@ -139,7 +138,7 @@ const DairyDetails = () => {
           />
         </div>
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-0"></div>
-      </section>
+      </section> */}
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-10">
   {data.images.map((img, index) => (
